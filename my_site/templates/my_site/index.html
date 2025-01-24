@@ -1,0 +1,70 @@
+{% extends 'my_site/base.html' %}
+{% load static %}
+
+{% block title %}Главная | Mercedes-Benz{% endblock %}
+
+{% block content %}
+
+<!-- Главная секция (герой-блок) -->
+<section class="hero-section">
+    <img src="{% static 'images/auto-2178926_1920.jpg' %}" alt="Дилерский центр в Киеве">
+</section>
+
+<!-- Новый блок (продолжение) -->
+<section class="additional-section">
+    <div class="image-block">
+        <img src="{% static 'images/dealer_center_kyiv.jpg' %}" alt="Тут картинка">
+    </div>
+    <div class="dark-text-block">
+        <p>Mercedes-Benz – це німецький бренд, що поєднує свої автомобілі люксового класу.
+           Компанія – це один з найбільших та найвідоміших виробників автомобілів у світі.</p>
+    </div>
+</section>
+
+<!-- Новый контент о основателе -->
+<section class="content">
+    <div class="text-container">
+        <h1>Перша машина.</h1>
+        <p>
+            Все починається на початку 19 століття.
+            В 1886 Карл Бенц створив перший автомобіль з двигуном внутрішнього згоряння - Benz Patent-Motorwagen.
+            З цього моменту розпочалася епоха автомобілів.
+        </p>
+
+        <h2>Засновник</h2>
+        <p>
+            Карл Бенц - німецький інженер і підприємець, який є одним із засновників
+            сучасного автомобільного виробництва
+            Він найбільш відомий як винахідник першого у світі автомобіля із двигуном внутрішнього згоряння.
+        </p>
+    </div>
+
+    <div class="image-container">
+        <img src="{% static 'images/Karl_Benz.jpg' %}" alt="Засновники компанії">
+    </div>
+</section>
+
+<section class="two-column-section">
+    <!-- Левая колонка (текст) -->
+    <div class="text-column">
+        <h2>Заголовок</h2>
+        <p>
+            Автомобілі з кожним роком стають все технологічнішими.
+            Компанії постійно впроваджує інновації, виробляє автомобілі, поєднуючи потужність,
+            комфорт та передові технології.
+        </p>
+        <p>
+            Кожна нова модель наближає до майбутнього, роблячи керування ще зручнішим,
+            екологічним та інтелектуальним.
+        </p>
+    </div>
+
+    <!-- Правая колонка (два фото) -->
+    <div class="photos-column">
+        <img src="{% static 'images/mercedes-1.jpg' %}" alt="Фото 1">
+        <img src="{% static 'images/mercedes-2.png' %}" alt="Фото 2">
+    </div>
+</section>
+
+{% endblock %}
+

@@ -1,0 +1,92 @@
+{% extends 'my_site/base.html' %}
+{% load static %}
+
+{% block title %}GLE | Mercedes-Benz{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <img src="{% static 'images/asphalt-1853590_1920.jpg' %}" alt="Дилерский центр в Киеве">
+</section>
+
+<section class="models-section">
+    <h2>Наші моделі</h2>
+    <div class="models-wrapper">
+        <div class="model-card">
+            <img src="{% static 'images/rb_67356.png' %}" alt="gle_300_d_4matic">
+            <h3>Velocity Prime</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+        <div class="model-card">
+            <img src="{% static 'images/3601993_67361.jpg' %}" alt="GLE 400 4MATIC">
+            <h3>Astra Nova</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+        <div class="model-card">
+            <img src="{% static 'images/3601327_67104.jpg' %}" alt="GLE 63 S 4MATIC">
+            <h3>Echelon Drive</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+    </div>
+</section>
+
+<section class="intro-section3">
+    <div class="content2">
+        <h2>Седан.</h2>
+        <p>Седан - закритий кузов легкового автомобіля з багажником, структурно відокремленим від пасажирського салону (на ранніх автомобілях багажник зазвичай мав вигляд прикріпленого до задньої стінки кузова валізи-кофра або був відсутній), без підйомних дверей в задній стінці, зазвичай з двома або трьома (наприклад, ЗІМ або «Чайка» ГАЗ-14) рядами повнорозмірних сидінь – і вище, ніж мінівен, пасажирський фургон, хетчбек, SUV та універсал.</p>
+    </div>
+    <div class="photo">
+        <img src="{% static 'images/2150697544.jpg' %}" alt="Фото">
+    </div>
+</section>
+
+<section class="intro-section3">
+    <div class="content2">
+        <h2>Якість інтер’єру, що вражає з першого погляду.</h2>
+        <p>Новий седан E-Класу встановлює нові стандарти не тільки з точки зору дизайну. Мультимедійна система MBUX останнього покоління забезпечує ще більш персоналізовані враження від перебування в автомобілі. Зручні функції, розваги та повсякденні бізнес-функції інтуїтивно зрозуміло та безперешкодно пов’язані між собою. Таким чином, новий автомобіль E-Класу пропонує вам ще більш приємну атмосферу — від розслаблюючої ранкової звички на мультиконтурному сидінні до плей-листа після роботи в DOLBY ATMOS.</p>
+    </div>
+    <div class="photo">
+        <img src="{% static 'images/2151138886.jpg' %}" alt="Фото">
+    </div>
+</section>
+
+<section class="features-section">
+    <h2>Особливості оснащення нових седанів.</h2>
+    <div class="features-wrapper">
+        <div class="feature-card">
+            <img src="{% static 'images/trunk.jpg' %}" alt="Великий багажник">
+            <h3>Великий багажник</h3>
+            <p>Седани мають містке багажне відділення, відокремлене від салону, що допомагає краще ізолювати шум і запахи.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/manageability121212.jpg' %}" alt="Хороша керованість та стійкість">
+            <h3>Хороша керованість та стійкість</h3>
+            <p>Завдяки низькому центру ваги седани забезпечують стабільність на дорозі та комфортне керування навіть на високих швидкостях.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/energy.jpg' %}" alt="Енергоефективність">
+            <h3>" Енергоефективність</h3>
+            <p>У порівнянні з позашляховиками та кросоверами, седани часто легші і мають кращу паливну економічність.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/types-roads.jpg' %}" alt="Підходить для різних типів доріг">
+            <h3>Підходить для різних типів доріг</h3>
+            <p>Седани добре справляються з міськими умовами та шосе, забезпечуючи плавність ходу та маневреність.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/spacious-salon.jpg' %}" alt="Просторий салон">
+            <h3>Просторий салон</h3>
+            <p>"Більшість седанів забезпечують зручне розміщення для водія та пасажирів, особливо на задньому ряду, що робить їх придатними для сімей.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/vid.jpg' %}" alt="Елегантний зовнішній вигляд">
+            <h3>Елегантний зовнішній вигляд</h3>
+            <p>Седаны часто выбирают за их солидный и элегантный дизайн, который подходит как для деловых встреч, так и для личных поездок.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

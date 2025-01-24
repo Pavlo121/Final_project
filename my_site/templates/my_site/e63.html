@@ -1,0 +1,90 @@
+{% extends 'my_site/base.html' %}
+{% load static %}
+
+{% block title %}E63 | Mercedes-Benz{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <img src="{% static 'images/mercedes_benz_e.jpg' %}" alt="Фото E-CLASS">
+</section>
+
+<section class="models-section">
+    <h2>Наші моделі</h2>
+    <div class="models-wrapper">
+
+        <!-- Карточка 1 -->
+        <div class="model-card">
+            <img src="{% static 'images/coupe1213.png' %}" alt="E 200">
+            <h3>Luxe Horizon</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="model-card">
+            <img src="{% static 'images/car-937414_1280.png' %}" alt="E 300 4MATIC">
+            <h3>Ignis Edge</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="model-card">
+            <img src="{% static 'images/car-49278_1280.jpg' %}" alt="E 450 4MATIC">
+            <h3>Stellar Curve</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+    </div>
+</section>
+
+<section class="intro-section3">
+    <div class="content2">
+        <h2>Якість інтер’єру, що вражає з першого погляду.</h2>
+        <p>Новий седан встановлює нові стандарти не тільки з точки зору дизайну.
+           Зручні функції, розваги та повсякденні бізнес-функції інтуїтивно зрозуміло та безперешкодно пов’язані між собою.
+        </p>
+    </div>
+    <div class="photo">
+        <img src="{% static 'images/interior-coupe.jpg' %}" alt="Фото">
+    </div>
+</section>
+
+<section class="features-section">
+    <h2>Особливості оснащення нового седана.</h2>
+    <div class="features-wrapper">
+        <div class="feature-card">
+            <img src="{% static 'images/appearance.jpg' %}" alt="Стильний та спортивний зовнішній вигляд">
+            <h3>Стильний та спортивний зовнішній вигляд</h3>
+            <p>Купе часто асоціюються з динамічним та яскравим дизайном, що робить їх привабливими для тих, хто цінує естетику та хоче популяризуватися на дорозі.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/maneuverability.jpg' %}" alt="Висока маневреність">
+            <h3>Висока маневреність</h3>
+            <p>Завдяки збільшеним розмірам порівняно з седанами, купе може бути більш маневреним та зручним для їзди міськими вулицями та парковками.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/speed12.jpg' %}" alt="Вищі характеристики продуктивності.">
+            <h3>Вищі характеристики продуктивності.</h3>
+            <p>Багато моделей орієнтовані на спортивні характеристики, що відрізняються відмінною швидкістю та динаміком.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/relief.jpg' %}" alt="Менша вага.">
+            <h3>Менша вага.</h3>
+            <p>Через компактнішу конструкцію часто виявляється легше, що забезпечує поліпшену паливну ефективність і більш високу продуктивність.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/exclusivity.jpg' %}" alt="Ексклюзивність">
+            <h3>Ексклюзивність</h3>
+            <p>Комфорт, що забезпечується активною системою підтримання безпечної дистанції DISTRONIC під час руху в транспортному потоці та при русі із зупинками, — це те, без чого ви не захочете обійтися в майбутньому. Система знімає стрес, автоматично підлаштовуючи вашу швидкість до швидкості транспортних засобів, що рухаються повільніше попереду.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/design1212.jpg' %}" alt="Система GUARD 360°">
+            <h3>Система GUARD 360°</h3>
+            <p>Система захисту автомобіля GUARD 360°[10] забезпечує всебічний моніторинг ситуації навколо автомобіля — наприклад, за допомогою розширеної протиугінної сигналізації та захисту від буксирування. Рухи в салоні викликають візуальні та звукові попередження. Функція визначення ДТП Collision Detection сповіщає вас.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

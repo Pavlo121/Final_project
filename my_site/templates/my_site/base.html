@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}DriveSphere{% endblock %}</title>
+
+    <!-- Подключаем общий CSS и JS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script defer src="{% static 'js/scripts.js' %}"></script>
+</head>
+<body>
+
+<!-- ========== ШАПКА (header) ========== -->
+<header>
+    <!-- Уведомление о целях сайта -->
+    <div class="header-notice">
+        <p>Цей сайт створено виключно з освітньою метою. Усі зображення та згадки брендів належать їхнім законним власникам. Сайт не є офіційним представником будь-яких автомобільних брендів.</p>
+    </div>
+
+    <!-- Логотип и навигация -->
+    <div class="logo">
+        <img src="{% static 'images/thelogo.jpg' %}" alt="DriveSphere">
+        <span>DriveSphere</span>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li class="dropdown">
+                <a href="#">Авто</a>
+                <div class="dropdown-menu">
+                    <a href="{% url 'g63' %}">SUV</a>
+                    <a href="{% url 'e63' %}">Coupe</a>
+                    <a href="{% url 'gle' %}">Sedan</a>
+                    <a href="{% url 'S_Class' %}">premium</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="{% url 'index' %}">Головна</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- ========== БЛОК ДЛЯ УНИКАЛЬНОГО КОНТЕНТА ========== -->
+{% block content %}
+{% endblock %}
+
+<!-- ========== ФУТЕР ========== -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="{% static 'images/thelogo.jpg' %}" alt="DriveSphere">
+            <span>DriveSphere</span>
+        </div>
+        <div class="footer-credit">
+            <a href="https://www.freepik.com" target="_blank">Изображение от Freepik</a>
+            <a href="https://pixabay.com/ru/" target="_blank">Изображение от Pixabay</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

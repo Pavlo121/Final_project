@@ -1,0 +1,93 @@
+{% extends 'my_site/base.html' %}
+{% load static %}
+
+{% block title %}G63 | Mercedes-Benz{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <img src="{% static 'images/beijing-automotive-2486704_1920.jpg' %}" alt="Дилерский центр в Киеве">
+</section>
+
+<section class="models-section">
+    <h2>Наші моделі</h2>
+    <div class="models-wrapper">
+        <div class="model-card">
+            <img src="{% static 'images/djip.jpg' %}" alt="Mountain Hawk">
+            <h3>Mountain Hawk d</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+        <div class="model-card">
+            <img src="{% static 'images/SUV.png' %}" alt="Tundra Pro">
+            <h3>Tundra Pro</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+        <div class="model-card">
+            <img src="{% static 'images/SUV2.png' %}" alt="Northern Wind">
+            <h3>Northern Wind</h3>
+            <a href="{% url 'order' %}" class="details-link">Заказати</a>
+        </div>
+    </div>
+</section>
+
+<section class="intro-section">
+    <h2>Позашляховик</h2>
+    <p>Позашляховик - автомобіль, що володіє підвищеною прохідністю бездоріжжям за рахунок великого кліренсу, провідних передніх і задніх коліс [1]. Є лише три види позашляховиків: малорозмірні, середньорозмірні та повнорозмірні..</p>
+    <h3>Перший у своєму роді.</h3>
+    <p>Першим цивільним позашляховиком, якщо не брати до уваги повнопривідні пікапи на кшталт Dodge Power Wagon, став трохи змінений армійський Willys MB. Після невеликої модернізації в 1944 році він перетворився на Willys CJ1. Розшифровувалась ця абревіатура як Civilian Jeep («Громадянський Джип»).</p>
+    <div class="history-images">
+        <img src="{% static 'images/perviiW.jpg' %}" alt="Історія G-Класу">
+        <img src="{% static 'images/renault-juvaquatre-1661009_1280.jpg' %}" alt="Історія G-Класу">
+    </div>
+</section>
+
+<section class="intro-section3">
+    <div class="content2">
+        <h2>Інтер’єр абсолютно нового позашляховика.</h2>
+        <p>Зустрічайте абсолютно новий позашляховик, в якому переконливий дизайн поєднується з майстерною розкішшю ручної роботи. Його інтер’єр випромінює елегантність, завдяки шкіряному оздобленню ручної роботи та естетичній підсвітці салону. Культова довершеність поєднання стилю та комфорту знайшла своє відображення.</p>
+    </div>
+    <div class="photo">
+        <img src="{% static 'images/interior-SUV.jpg' %}" alt="Фото">
+    </div>
+</section>
+
+<section class="features-section">
+    <h2>Особливості нового позашляховика.</h2>
+    <div class="features-wrapper">
+        <div class="feature-card">
+            <img src="{% static 'images/2151473043.jpg' %}" alt="Високий кліренс">
+            <h3>Високий кліренс</h3>
+            <p>Передня вісь Mercedes-Benz G-Клас з подвійнми поперечним важелем разом з електричним підсилювачем керма забезпечує плавний, стабільний хід, чутливо реагуючи на нерівності дороги.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/tire.jpg' %}" alt="Шини для бездоріжжя">
+            <h3>Шини для бездоріжжя</h3>
+            <p>У підвісці AGILITY CONTROL бездоганно поєднуються комфорт і стабільність руху, регулюючи динаміку на різних дорожніх умовах.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/2147897814.jpg' %}" alt="Посилена підвіска">
+            <h3>Посилена підвіска</h3>
+            <p>Збільшена потужність і крутний момент двигуна забезпечують чудову плавність роботи та високу ефективність на низьких обертах.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/comfort.jpg' %}" alt="Комфорт">
+            <h3>Комфорт</h3>
+            <p>Завдяки дев'яти передачам автоматична коробка працює на низьких обертах двигуна, знижуючи витрату пального та забезпечуючи тихіший хід.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/reliability.jpg' %}" alt="Надійність">
+            <h3>Надійність</h3>
+            <p>У разі ненавмисного перетину переривчастої або суцільної лінії ви отримаєте попередження від системи за допомогою вібрації керма.</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="{% static 'images/durability.jpg' %}" alt="Долговічність">
+            <h3>Долговічність</h3>
+            <p>Система KEYLESS-GO покладе край пошукам ключа від автомобіля. Ключ розпізнається, коли ви тримаєте його при собі, перебуваючи поруч або всередині автомобіля: всі двері, в тому числі й задні, можна відчинити та замкнути простим дотиком до дверної ручки.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
