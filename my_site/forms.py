@@ -9,3 +9,9 @@ class RegistrationForm(forms.ModelForm):
         fields = ['first_name', 'last_name', 'phone', 'email', 'password']
 
 
+
+
+class LoginForm(forms.Form):
+    email = forms.EmailField(label='Email')
+    password = forms.CharField(label='Пароль', widget=forms.PasswordInput)
+

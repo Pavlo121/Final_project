@@ -1,9 +1,12 @@
 from django.urls import path
 from . import views
-from .views import OrderListCreateView, OrderRetrieveAPIView, UserProfileListCreateView, UserProfileRetrieveView
+from .views import OrderListCreateView, OrderRetrieveAPIView, UserProfileListCreateView, UserProfileRetrieveView,login_view, logout_view
 
 urlpatterns = [
-    path("", views.register, name="register"),  # Страница регистрации
+    path("", views.register, name="register"),
+    path('login/', login_view, name='login'),
+    path('logout/', logout_view, name='logout'),
+    # Страница регистрации
     path("home/", views.home, name="index"),# Главная страница теперь по "/"
     path('g63/', views.g63, name='g63'),
     path('e63/', views.e63, name='e63'),
